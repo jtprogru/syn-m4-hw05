@@ -1,0 +1,21 @@
+<!-- templates/page1.html -->
+{% extends 'base.html' %}
+
+{% block title %}Домашняя страница{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <h2>Вот что тебе доступно</h2>
+    </br>
+    <a href="{% url 'page1' %}">Табличка</a>
+    </br>
+    <a href="{% url 'page2' %}">Статья раз</a>
+    </br>
+    <a href="{% url 'page3' %}">Статья два</a>
+    </br>
+
+</div>
+
+
+{% endblock %}
